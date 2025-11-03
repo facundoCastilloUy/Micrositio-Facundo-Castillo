@@ -10,87 +10,192 @@
 
 <body class="bg-bg-light text-text-light dark:bg-bg-dark dark:text-text-dark">
 
-<header>
-  <nav class="flex items-center p-4">
-    <!-- Logo -->
-    <a href="index.html" class="flex">
-      FacundoCastillo
-      <svg class="w-4 h-4">
-        <use href="assets/sprite.svg#icon-verified"></use>
-      </svg>
-    </a>
+    <header>
+        <nav class="flex items-center p-4">
+            <!-- Logo -->
+            <a href="index.html" class="flex">
+                FacundoCastillo
+                <svg class="w-4 h-4">
+                    <use href="assets/sprite.svg#icon-verified"></use>
+                </svg>
+            </a>
 
-    <!-- toggle tema + hamburguesa -->
-    <div class="ml-auto flex items-center gap-4 md:hidden">
-      <button id="theme-toggle-mobile" aria-label="Cambiar tema">
-        <svg id="icon-moon-m" class="w-5 h-5">
-          <use href="assets/sprite.svg#icon-moon"></use>
-        </svg>
-        <svg id="icon-sun-m" class="w-5 h-5 hidden">
-          <use href="assets/sprite.svg#icon-sun"></use>
-        </svg>
-      </button>
+            <!-- menu hamburguesa + toggle MOBILE -->
+            <div class="ml-auto flex items-center gap-8 md:hidden">
+                <button id="theme-toggle-mobile" aria-label="Cambiar tema">
+                    <svg id="icon-moon-m" class="w-5 h-5">
+                        <use href="assets/sprite.svg#icon-moon"></use>
+                    </svg>
+                    <svg id="icon-sun-m" class="w-5 h-5 hidden">
+                        <use href="assets/sprite.svg#icon-sun"></use>
+                    </svg>
+                </button>
 
-      <button id="nav-toggle" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false">
-        <svg id="icon-menu-open" class="w-6 h-6">
-          <use href="assets/sprite.svg#icon-menu"></use>
-        </svg>
-        <svg id="icon-menu-close" class="w-6 h-6 hidden">
-          <use href="assets/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-    </div>
+                <button id="nav-toggle" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg id="icon-menu-open" class="w-6 h-6">
+                        <use href="assets/sprite.svg#icon-menu"></use>
+                    </svg>
+                    <svg id="icon-menu-close" class="w-6 h-6 hidden">
+                        <use href="assets/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
 
-    <!-- Menú + toggle DESKTOP -->
-    <ul class="hidden md:flex gap-4 ml-auto items-center">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="sobre-mi.html">Sobre mí</a></li>
-      <li><a href="planes.html">Planes</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li>
-        <button id="theme-toggle" aria-label="Cambiar tema">
-          <svg id="icon-moon" class="w-5 h-5">
-            <use href="assets/sprite.svg#icon-moon"></use>
-          </svg>
-          <svg id="icon-sun" class="w-5 h-5 hidden">
-            <use href="assets/sprite.svg#icon-sun"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
-  </nav>
+            <!-- Menú + toggle DESKTOP -->
+            <ul class="hidden md:flex gap-8 ml-auto items-center">
+                <li><a class="hover:text-primary" href="index.html">Inicio</a></li>
+                <li><a class="hover:text-primary" href="sobre-mi.html">Sobre mí</a></li>
+                <li><a class="hover:text-primary" href="planes.html">Planes</a></li>
+                <li><a class="hover:text-primary" href="contacto.html">Contacto</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Cambiar tema">
+                        <svg id="icon-moon" class="w-5 h-5">
+                            <use href="assets/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <svg id="icon-sun" class="w-5 h-5 hidden">
+                            <use href="assets/sprite.svg#icon-sun"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
 
-  <!-- Panel mobile -->
-<div id="mobile-menu" class="hidden md:hidden mr-6">
-  <ul class="flex flex-col items-end">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="sobre-mi.html">Sobre mí</a></li>
-    <li><a href="planes.html">Planes</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-  </ul>
-</div>
-</header>
+        <!-- Panel mobile -->
+        <div id="mobile-menu" class="hidden md:hidden mr-6">
+            <ul class="flex flex-col items-end gap-2">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="planes.html">Planes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
 
+    <main>
 
+        <!-- Hero -->
+        <section id="hero"
+            class="flex flex-col-reverse md:flex-row items-center justify-between p-8 md:px-16 lg:px-24 min-h-[400px] md:min-h-screen">
 
+            <div id="hero-text" class="flex-1 text-center md:text-left max-w-xl">
+                <p class="uppercase tracking-widest text-sm text-gray-500">Hola, mi nombre es</p>
+                <h1 class="text-4xl md:text-5xl font-black text-primary mb-4">Facundo Castillo</h1>
+                <p class="mb-6 text-lg text-gray-700 dark:text-gray-300 text-balance">
+                    Desarrollo sitios web rápidos, claros y modernos. Me especializo en crear experiencias optimizadas, con foco en la estructura, la velocidad y la presentación.<b>¿Estás listo para llevar tu marca a la web?</b></p>
+                <a href="planes.html" class="inline-block bg-primary text-white font-medium px-6 py-3 rounded-md hover:opacity-90 transition">Ver planes</a>
+            </div>
 
-
-
-
-    <main class="h-screen">
-        <section class="p-8 text-center">
-            <h1 class="text-3xl font-bold text-primary mb-4">Hola, soy Facundo Castillo</h1>
-            <p class="max-w-xl mx-auto">Desarrollo sitios web rápidos, claros y modernos. Probá el modo oscuro con el
-                botón ☀️/🌙 arriba.</p>
+            <div id="hero-img" class="flex-1 flex justify-center">
+                <img src="./assets/img/hero-img.png" alt="Ilustración representando desarrollo web" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-primary object-cover
+             md:rounded-none md:border-0 md:w-auto md:h-auto md:max-w-lg lg:max-w-xl xl:max-w-2xl
+             md:object-contain md:object-bottom">
+            </div>
         </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="py-20 md:text-center bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">Servicios</h2>
+                <ul class="grid gap-8 md:grid-cols-3">
+                    <li
+                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-sm">
+                        <h3 class="font-semibold text-lg mb-3 text-primary">Landing pages</h3>
+                        <p class="text-gray-700 dark:text-gray-100 leading-relaxed">
+                            Diseño y maquetación responsive listas para publicar.
+                        </p>
+                    </li>
+                    <li
+                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-sm">
+                        <h3 class="font-semibold text-lg mb-3 text-primary">Sitios institucionales</h3>
+                        <p class="text-gray-700 dark:text-gray-100 leading-relaxed">
+                            Estructura clara, navegación simple y performance sólida.
+                        </p>
+                    </li>
+                    <li
+                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-sm">
+                        <h3 class="font-semibold text-lg mb-3 text-primary">Optimización</h3>
+                        <p class="text-gray-700 dark:text-gray-100 leading-relaxed">
+                            Mejoras de velocidad, SEO técnico básico y orden de código.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Por qué elegirme -->
+        <section id="beneficios"
+            class="py-20 md:text-center border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">Por qué elegirme</h2>
+                <ul class="grid gap-6 md:grid-cols-2 text-gray-700 dark:text-gray-100 leading-relaxed">
+                    <li class="bg-gray-50 dark:bg-gray-800 p-6 rounded-md shadow-sm">⚡ Entregas claras y sin vueltas.</li>
+                    <li class="bg-gray-50 dark:bg-gray-800 p-6 rounded-md shadow-sm">📱 Diseños que funcionan en cualquier dispositivo.</li>
+                    <li class="bg-gray-50 dark:bg-gray-800 p-6 rounded-md shadow-sm">🧩 Código ordenado y escalable.</li>
+                    <li class="bg-gray-50 dark:bg-gray-800 p-6 rounded-md shadow-sm">🔗 Publicación simple (Netlify/GitHub) y soporte inicial.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Planes -->
+        <section id="planes-teaser" class="py-20 md:text-center bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">Planes</h2>
+                <div class="grid gap-8 md:grid-cols-3">
+                    <article
+                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md">
+                        <h3 class="font-semibold text-lg mb-3 text-primary">Esencial</h3>
+                        <p class="text-gray-700 dark:text-gray-100 leading-relaxed mb-4">Landing 1 sección + contacto embebido.</p>
+                        <a href="planes.html" class="underline">Ver detalle</a>
+                    </article>
+                    <article
+                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md">
+                        <h3 class="font-semibold text-lg mb-3 text-primary">Profesional</h3>
+                        <p class="text-gray-700 dark:text-gray-100 leading-relaxed mb-4">Hasta 4 secciones, formularios y publicación.</p>
+                        <a href="planes.html" class="underline">Ver detalle</a>
+                    </article>
+                    <article
+                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md">
+                        <h3 class="font-semibold text-lg mb-3 text-primary">Catálogo</h3>
+                        <p class="text-gray-700 dark:text-gray-100 leading-relaxed mb-4">Listado simple de servicios/productos (estático).</p>
+                        <a href="planes.html" class="underline">Ver detalle</a>
+                    </article>
+                </div>
+                <div class="mt-10">
+                    <a href="planes.html" class="inline-block underline font-medium text-gray-900 dark:text-gray-100">Ver todos los planes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="resumen"
+            class="py-20 md:text-center border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">Sobre mí</h2>
+                <p class="max-w-prose m-auto text-gray-700 dark:text-gray-100 leading-relaxed">
+                    Soy desarrollador front-end. Me enfoco en sitios claros, rápidos y listos para publicar.
+                    Trabajo con herramientas modernas del ecosistema web y una comunicación directa.
+                </p>
+                <a href="sobre-mi.html" class="inline-block underline mt-5 font-medium text-gray-900 dark:text-gray-100">Conoceme más</a>
+            </div>
+        </section>
+
+        <!-- CTA final -->
+        <section id="cta-final"
+            class="py-20 text-center bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">¿Listo para llevar tu marca a la web?</h2>
+                <a href="planes.html" class="inline-block bg-primary text-white px-6 py-3 rounded-md">Ver planes</a>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="text-gray-500">
+    <footer class="bg-bg-dark text-text-dark dark:bg-bg-light dark:text-text-light p-4">
         <nav>
-            <ul>
+            <ul class="flex flex-col gap-2 items-center md:flex-row md:justify-between">
                 <p>Desarrollado con ♥ por Facundo Castillo.</p>
-                <li><a href="porque.html">Sobre este proyecto</a></li>
-                <li><a href="https://github.com/facundocastillo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <li><a class="hover:underline" href="porque.html">Sobre este proyecto</a></li>
+                <li><a class="hover:underline" href="https://github.com/facundoCastilloUy" target="_blank">GitHub</a>
                 </li>
             </ul>
         </nav>
