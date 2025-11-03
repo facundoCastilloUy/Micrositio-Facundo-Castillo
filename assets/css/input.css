@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1;       /* acento principal (indigo) */
+  --color-bg-light: #f9fafb;      /* fondo claro */
+  --color-bg-dark: #111827;       /* fondo oscuro */
+  --color-text-light: #111827;    /* texto en modo claro */
+  --color-text-dark: #e5e7eb;     /* texto en modo oscuro */
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
