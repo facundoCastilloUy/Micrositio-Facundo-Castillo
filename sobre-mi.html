@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -8,33 +8,147 @@
     <title>Facundo Castillo - Sitios web rápidos y funcionales</title>
 </head>
 
-<body>
+<body class="bg-bg-light text-text-light dark:bg-bg-dark dark:text-text-dark">
+
     <header>
-        <nav>
-            <a href="index.html">FacundoCastillo.</a>
-            <ul>
+        <nav class="flex items-center p-4">
+            <!-- Logo -->
+            <a href="index.html" class="flex">
+                FacundoCastillo
+                <svg class="w-4 h-4">
+                    <use href="assets/sprite.svg#icon-verified"></use>
+                </svg>
+            </a>
+
+            <!-- menu hamburguesa + toggle MOBILE -->
+            <div class="ml-auto flex items-center gap-8 md:hidden">
+                <button id="theme-toggle-mobile" aria-label="Cambiar tema">
+                    <svg id="icon-moon-m" class="w-5 h-5">
+                        <use href="assets/sprite.svg#icon-moon"></use>
+                    </svg>
+                    <svg id="icon-sun-m" class="w-5 h-5 hidden">
+                        <use href="assets/sprite.svg#icon-sun"></use>
+                    </svg>
+                </button>
+
+                <button id="nav-toggle" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg id="icon-menu-open" class="w-6 h-6">
+                        <use href="assets/sprite.svg#icon-menu"></use>
+                    </svg>
+                    <svg id="icon-menu-close" class="w-6 h-6 hidden">
+                        <use href="assets/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menú + toggle DESKTOP -->
+            <ul class="hidden md:flex gap-8 ml-auto items-center">
+                <li><a class="hover:text-primary" href="index.html">Inicio</a></li>
+                <li><a class="hover:text-primary" href="sobre-mi.html">Sobre mí</a></li>
+                <li><a class="hover:text-primary" href="planes.html">Planes</a></li>
+                <li><a class="hover:text-primary" href="contacto.html">Contacto</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Cambiar tema">
+                        <svg id="icon-moon" class="w-5 h-5">
+                            <use href="assets/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <svg id="icon-sun" class="w-5 h-5 hidden">
+                            <use href="assets/sprite.svg#icon-sun"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Panel mobile -->
+        <div id="mobile-menu" class="hidden md:hidden mr-6">
+            <ul class="flex flex-col items-end gap-2">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="sobre-mi.html">Sobre mí</a></li>
                 <li><a href="planes.html">Planes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            <button id="theme-toggle" aria-label="Cambiar tema">🌓</button>
-        </nav>
+        </div>
     </header>
 
-    <main></main>
+<main class="p-8 md:p-16 max-w-5xl mx-auto space-y-16">
 
-    <footer>
+  <!-- Presentación -->
+  <section id="bio" class="text-center md:text-left">
+    <h1 class="text-3xl font-bold mb-6">Sobre mí</h1>
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          Soy <strong>Facundo Castillo</strong>, desarrollador front-end enfocado en crear sitios web claros,
+          rápidos y funcionales. Me interesa combinar código limpio, diseño consciente y estructura adaptable.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          Trabajo con herramientas modernas del ecosistema web y disfruto optimizar tanto la parte visual
+          como el rendimiento y la organización interna de cada proyecto.
+        </p>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <img src="assets/img/FacundoCastillo.png" alt="Foto o ilustración representando a Facundo Castillo"
+             class="rounded-full md:rounded-lg w-48 h-48 md:w-80 md:h-80 object-cover border-4 border-primary" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="text-center">
+    <h2 class="text-2xl font-bold mb-6">Habilidades y herramientas</h2>
+    <ul class="grid gap-4 md:grid-cols-3 text-gray-700 dark:text-gray-300">
+      <li>HTML / CSS / JavaScript</li>
+      <li>Tailwind CSS</li>
+      <li>Git / GitHub</li>
+      <li>Diseño responsivo</li>
+      <li>Optimización y performance</li>
+      <li>Uso de IA en flujos de diseño</li>
+    </ul>
+  </section>
+
+  <!-- Artículo / Reflexión -->
+  <section id="articulo" class="max-w-prose mx-auto">
+    <h2 class="text-2xl font-bold mb-6 text-center">Diseñar y desarrollar en la era de la IA</h2>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+      La inteligencia artificial está transformando la manera en que diseñamos y desarrollamos sitios web.
+      Lejos de reemplazar la creatividad, nos permite enfocarnos en las decisiones estratégicas y conceptuales,
+      automatizando tareas repetitivas o técnicas.
+    </p>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+      En mi caso, incorporo herramientas de IA para acelerar la ideación y optimizar procesos —desde la
+      generación de contenido inicial hasta la exploración de layouts y la validación de interfaces.
+      Esto me permite ofrecer soluciones más ágiles y adaptadas a cada cliente.
+    </p>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+      Creo que el rol del diseñador digital actual se define por su capacidad de integrar estas tecnologías
+      sin perder la sensibilidad humana, el criterio estético y el foco en la experiencia del usuario.
+    </p>
+  </section>
+
+  <!-- CTA final -->
+  <section id="cta" class="text-center">
+    <h2 class="text-xl font-semibold mb-4">¿Querés saber más o trabajar conmigo?</h2>
+    <a href="contacto.html" class="inline-block bg-primary text-white px-6 py-3 rounded">
+      Contactame
+    </a>
+  </section>
+
+</main>
+
+    <footer class="bg-bg-dark text-text-dark dark:bg-bg-light dark:text-text-light p-4">
         <nav>
-            <ul>
+            <ul class="flex flex-col gap-2 items-center md:flex-row md:justify-between">
                 <p>Desarrollado con ♥ por Facundo Castillo.</p>
-                <li><a href="porque.html">Sobre este proyecto</a></li>
-                <li><a href="https://github.com/facundocastillo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <li><a class="hover:underline" href="porque.html">Sobre este proyecto</a></li>
+                <li><a class="hover:underline" href="https://github.com/facundoCastilloUy" target="_blank">GitHub</a>
                 </li>
             </ul>
         </nav>
     </footer>
-    
+
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
