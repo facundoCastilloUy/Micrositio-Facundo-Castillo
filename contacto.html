@@ -71,13 +71,76 @@
         </div>
     </header>
 
-    <main >
-        <section class="p-8 text-center">
-            <h1 class="text-3xl font-bold text-primary mb-4">(contacto)Hola, soy Facundo Castillo</h1>
-            <p class="max-w-xl mx-auto">Desarrollo sitios web rápidos, claros y modernos. Probá el modo oscuro con el
-                botón ☀️/🌙 arriba.</p>
-        </section>
-    </main>
+<main class="p-8 md:p-16 max-w-3xl mx-auto space-y-12">
+  <!-- Intro -->
+  <section class="text-center">
+    <h1 class="text-3xl font-bold mb-4">Contacto</h1>
+    <p class="text-gray-700 dark:text-gray-100 leading-relaxed">
+      Dejá tus datos y te respondo a la brevedad.
+    </p>
+  </section>
+
+  <!-- Form HTML + Formspree -->
+  <section class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 md:p-8 shadow-md">
+    <form
+      action="https://formspree.io/f/mgvpjzza"
+      method="POST"
+      class="space-y-6"
+    >
+      <!-- Anti-spam (honeypot) -->
+      <input type="text" name="_gotcha" class="hidden" aria-hidden="true">
+
+      <!-- Redirección post-envío (opcional) -->
+      <input type="hidden" name="_redirect" value="https://TU-DOMINIO/contacto-exito.html">
+
+      <div>
+        <label for="nombre" class="block font-medium mb-1">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required
+               class="w-full rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 p-3 text-gray-900 dark:text-gray-100">
+      </div>
+
+      <div>
+        <label for="email" class="block font-medium mb-1">Email</label>
+        <input id="email" name="email" type="email" required
+               class="w-full rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 p-3 text-gray-900 dark:text-gray-100">
+      </div>
+
+      <div>
+        <label for="objetivo" class="block font-medium mb-1">¿Qué necesitás?</label>
+        <select id="objetivo" name="objetivo" required
+                class="w-full rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 p-3 text-gray-900 dark:text-gray-100">
+          <option value="">Seleccioná una opción</option>
+          <option>Landing page</option>
+          <option>Sitio institucional</option>
+          <option>Optimización</option>
+          <option>Consulta general</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="mensaje" class="block font-medium mb-1">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required
+                  class="w-full rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 p-3 text-gray-900 dark:text-gray-100"></textarea>
+      </div>
+
+      <div class="flex items-start gap-2">
+        <input id="acepto" type="checkbox" name="acepto" required class="mt-1">
+        <label for="acepto" class="text-sm text-gray-700 dark:text-gray-100">
+          Acepto el uso de mis datos para responder a esta consulta.
+        </label>
+      </div>
+
+      <button type="submit" class="bg-primary text-white px-6 py-3 rounded">
+        Enviar
+      </button>
+
+      <p class="text-xs text-gray-600 dark:text-gray-200">
+        Este formulario usa Formspree para el envío seguro de mensajes.
+      </p>
+    </form>
+  </section>
+
+</main>
 
     <footer class="bg-bg-dark text-text-dark dark:bg-bg-light dark:text-text-light p-4">
         <nav>

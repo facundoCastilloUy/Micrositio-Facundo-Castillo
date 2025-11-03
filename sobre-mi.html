@@ -71,13 +71,70 @@
         </div>
     </header>
 
-    <main >
-        <section class="p-8 text-center">
-            <h1 class="text-3xl font-bold text-primary mb-4">(sobre-mi)Hola, soy Facundo Castillo</h1>
-            <p class="max-w-xl mx-auto">Desarrollo sitios web rápidos, claros y modernos. Probá el modo oscuro con el
-                botón ☀️/🌙 arriba.</p>
-        </section>
-    </main>
+<main class="p-8 md:p-16 max-w-5xl mx-auto space-y-16">
+
+  <!-- Presentación -->
+  <section id="bio" class="text-center md:text-left">
+    <h1 class="text-3xl font-bold mb-6">Sobre mí</h1>
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          Soy <strong>Facundo Castillo</strong>, desarrollador front-end enfocado en crear sitios web claros,
+          rápidos y funcionales. Me interesa combinar código limpio, diseño consciente y estructura adaptable.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          Trabajo con herramientas modernas del ecosistema web y disfruto optimizar tanto la parte visual
+          como el rendimiento y la organización interna de cada proyecto.
+        </p>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <img src="assets/img/FacundoCastillo.png" alt="Foto o ilustración representando a Facundo Castillo"
+             class="rounded-full md:rounded-lg w-48 h-48 md:w-80 md:h-80 object-cover border-4 border-primary" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="text-center">
+    <h2 class="text-2xl font-bold mb-6">Habilidades y herramientas</h2>
+    <ul class="grid gap-4 md:grid-cols-3 text-gray-700 dark:text-gray-300">
+      <li>HTML / CSS / JavaScript</li>
+      <li>Tailwind CSS</li>
+      <li>Git / GitHub</li>
+      <li>Diseño responsivo</li>
+      <li>Optimización y performance</li>
+      <li>Uso de IA en flujos de diseño</li>
+    </ul>
+  </section>
+
+  <!-- Artículo / Reflexión -->
+  <section id="articulo" class="max-w-prose mx-auto">
+    <h2 class="text-2xl font-bold mb-6 text-center">Diseñar y desarrollar en la era de la IA</h2>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+      La inteligencia artificial está transformando la manera en que diseñamos y desarrollamos sitios web.
+      Lejos de reemplazar la creatividad, nos permite enfocarnos en las decisiones estratégicas y conceptuales,
+      automatizando tareas repetitivas o técnicas.
+    </p>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+      En mi caso, incorporo herramientas de IA para acelerar la ideación y optimizar procesos —desde la
+      generación de contenido inicial hasta la exploración de layouts y la validación de interfaces.
+      Esto me permite ofrecer soluciones más ágiles y adaptadas a cada cliente.
+    </p>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+      Creo que el rol del diseñador digital actual se define por su capacidad de integrar estas tecnologías
+      sin perder la sensibilidad humana, el criterio estético y el foco en la experiencia del usuario.
+    </p>
+  </section>
+
+  <!-- CTA final -->
+  <section id="cta" class="text-center">
+    <h2 class="text-xl font-semibold mb-4">¿Querés saber más o trabajar conmigo?</h2>
+    <a href="contacto.html" class="inline-block bg-primary text-white px-6 py-3 rounded">
+      Contactame
+    </a>
+  </section>
+
+</main>
 
     <footer class="bg-bg-dark text-text-dark dark:bg-bg-light dark:text-text-light p-4">
         <nav>

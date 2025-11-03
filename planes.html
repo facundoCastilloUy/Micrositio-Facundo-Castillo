@@ -71,13 +71,148 @@
         </div>
     </header>
 
-    <main >
-        <section class="p-8 text-center">
-            <h1 class="text-3xl font-bold text-primary mb-4">(planes)Hola, soy Facundo Castillo</h1>
-            <p class="max-w-xl mx-auto">Desarrollo sitios web rápidos, claros y modernos. Probá el modo oscuro con el
-                botón ☀️/🌙 arriba.</p>
+    <main class="p-8 md:p-16 max-w-6xl mx-auto space-y-16">
+
+        <!-- Intro -->
+        <section id="intro" class="text-center max-w-3xl mx-auto">
+            <h1 class="text-3xl font-bold mb-4">Planes</h1>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                Ofrezco distintos tipos de desarrollo web según tus necesidades.
+                Todos los planes incluyen optimización básica, estructura responsive y publicación online.
+            </p>
         </section>
+
+        <!-- Cards de planes -->
+<section id="planes-detalle" class="grid gap-8 md:grid-cols-3">
+  <!-- Plan Esencial -->
+  <article class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md flex flex-col">
+    <h2 class="font-semibold text-xl mb-2 text-primary">Esencial</h2>
+    <ul class="text-gray-700 dark:text-gray-100 leading-relaxed mb-4 space-y-2 grow">
+      <li>Landing page de una sección</li>
+      <li>Formulario de contacto embebido</li>
+      <li>Publicación en Netlify o GitHub</li>
+    </ul>
+    <p class="font-bold text-lg mb-4 text-center">$U 3.500</p>
+    <a href="contacto.html" class="inline-block bg-primary text-white px-5 py-2 rounded mt-auto self-start md:self-center">
+      Elegir plan
+    </a>
+  </article>
+
+  <!-- Plan Profesional -->
+  <article class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md flex flex-col">
+    <h2 class="font-semibold text-xl mb-2 text-primary">Profesional</h2>
+    <ul class="text-gray-700 dark:text-gray-100 leading-relaxed mb-4 space-y-2 grow">
+      <li>Hasta 4 secciones con diseño personalizado</li>
+      <li>Formulario completo + optimización SEO</li>
+      <li>Publicación y soporte inicial</li>
+    </ul>
+    <p class="font-bold text-lg mb-4 text-center">$U 7.000</p>
+    <a href="contacto.html" class="inline-block bg-primary text-white px-5 py-2 rounded mt-auto self-start md:self-center">
+      Elegir plan
+    </a>
+  </article>
+
+  <!-- Plan Catálogo -->
+  <article class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md flex flex-col">
+    <h2 class="font-semibold text-xl mb-2 text-primary">Catálogo</h2>
+    <ul class="text-gray-700 dark:text-gray-100 leading-relaxed mb-4 space-y-2 grow">
+      <li>Listado de servicios o productos (estático)</li>
+      <li>Optimización visual y estructura modular</li>
+      <li>Publicación incluida (Netlify/GitHub)</li>
+    </ul>
+    <p class="font-bold text-lg mb-4 text-center">$U 9.000</p>
+    <a href="contacto.html" class="inline-block bg-primary text-white px-5 py-2 rounded mt-auto self-start md:self-center">
+      Elegir plan
+    </a>
+  </article>
+</section>
+        <!-- Comparativa -->
+        <section id="comparativa" class="text-center">
+            <h2 class="text-2xl font-bold mb-6">Comparativa rápida</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full border border-gray-200 dark:border-gray-700 text-left">
+                    <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 font-semibold">Características</th>
+                            <th class="py-3 px-4">Esencial</th>
+                            <th class="py-3 px-4">Profesional</th>
+                            <th class="py-3 px-4">Catálogo</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700 dark:text-gray-300">
+                        <tr class="border-t border-gray-200 dark:border-gray-700">
+                            <td class="py-2 px-4">Cantidad de secciones</td>
+                            <td class="py-2 px-4">1</td>
+                            <td class="py-2 px-4">Hasta 4</td>
+                            <td class="py-2 px-4">Hasta 6</td>
+                        </tr>
+                        <tr class="border-t border-gray-200 dark:border-gray-700">
+                            <td class="py-2 px-4">Formulario de contacto</td>
+                            <td class="py-2 px-4">Sí (simple)</td>
+                            <td class="py-2 px-4">Sí (personalizado)</td>
+                            <td class="py-2 px-4">Opcional</td>
+                        </tr>
+                        <tr class="border-t border-gray-200 dark:border-gray-700">
+                            <td class="py-2 px-4">Optimización SEO</td>
+                            <td class="py-2 px-4">Básica</td>
+                            <td class="py-2 px-4">Avanzada</td>
+                            <td class="py-2 px-4">Básica</td>
+                        </tr>
+                        <tr class="border-t border-gray-200 dark:border-gray-700">
+                            <td class="py-2 px-4">Publicación incluida</td>
+                            <td class="py-2 px-4">✔️</td>
+                            <td class="py-2 px-4">✔️</td>
+                            <td class="py-2 px-4">✔️</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Planes a medida -->
+        <section id="personalizado" class="text-center max-w-3xl mx-auto">
+            <h2 class="text-2xl font-bold mb-4">¿Buscás algo diferente?</h2>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                También desarrollo sitios a medida según tus necesidades o presupuesto.
+                Si no estás seguro de qué plan elegir, puedo ayudarte a definir la mejor opción.
+            </p>
+            <a href="contacto.html" class="inline-block bg-primary text-white px-6 py-3 rounded">Consultar</a>
+        </section>
+
+        <!-- Preguntas frecuentes -->
+        <section id="faq" class="max-w-3xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 text-center">Preguntas frecuentes</h2>
+
+            <details class="border border-gray-200 dark:border-gray-700 rounded mb-3 bg-white dark:bg-gray-900 p-4">
+                <summary class="font-semibold cursor-pointer">¿Puedo pedir cambios luego de publicado el sitio?
+                </summary>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">
+                    Sí, los ajustes menores están incluidos. Si querés agregar nuevas secciones o funciones, podemos
+                    cotizarlo aparte.
+                </p>
+            </details>
+
+            <details class="border border-gray-200 dark:border-gray-700 rounded mb-3 bg-white dark:bg-gray-900 p-4">
+                <summary class="font-semibold cursor-pointer">¿El dominio y hosting están incluidos?</summary>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">
+                    La publicación del sitio está incluida en todos los planes, utilizando plataformas gratuitas como
+                    Netlify o GitHub Pages.
+                    Si querés usar un dominio propio (por ejemplo, <em>tumarca.com</em>), puedo orientarte para
+                    registrarlo y vincularlo.
+                </p>
+            </details>
+
+            <details class="border border-gray-200 dark:border-gray-700 rounded bg-white dark:bg-gray-900 p-4">
+                <summary class="font-semibold cursor-pointer">¿Puedo solicitar un diseño basado en una referencia o
+                    plantilla?</summary>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">
+                    Claro, puedo adaptar el diseño que tengas en mente y optimizarlo para tu marca y objetivos.
+                </p>
+            </details>
+        </section>
+
     </main>
+
 
     <footer class="bg-bg-dark text-text-dark dark:bg-bg-light dark:text-text-light p-4">
         <nav>
