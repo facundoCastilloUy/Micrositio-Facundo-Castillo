@@ -2,6 +2,16 @@
 <html lang="es" class="scroll-smooth">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NHCH2Z4L');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/output.css" />
@@ -9,6 +19,12 @@
 </head>
 
 <body class="bg-bg-light text-text-light dark:bg-bg-dark dark:text-text-dark">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHCH2Z4L" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
 
     <header>
         <nav class="flex items-center p-4">
@@ -71,12 +87,85 @@
         </div>
     </header>
 
-    <main >
-        <section class="p-8 text-center">
-            <h1 class="text-3xl font-bold text-primary mb-4">(porque)Hola, soy Facundo Castillo</h1>
-            <p class="max-w-xl mx-auto">Desarrollo sitios web rápidos, claros y modernos. Probá el modo oscuro con el
-                botón ☀️/🌙 arriba.</p>
+    <main class="p-8 md:p-16 max-w-4xl mx-auto space-y-12">
+
+        <section>
+            <h1 class="text-3xl font-bold mb-6 text-center">Sobre este proyecto</h1>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                Este micrositio personal forma parte del curso <strong>Diseño Web 3</strong>.
+                El objetivo fue crear un sitio propio que funcione como carta de presentación profesional,
+                aplicando herramientas y metodologías actuales del entorno web.
+            </p>
         </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Mi enfoque y el Value Proposition Canvas</h2>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                Desde el principio usé el <strong>Value Proposition Canvas</strong> como guía para definir la estrategia
+                del sitio.
+                En lugar de pensar solo en mostrar proyectos, busqué entender qué necesita alguien que contrata
+                servicios de desarrollo front-end.
+                Así llegué a la idea de ofrecer <strong>soluciones simples y claras para emprendedores o pequeñas
+                    empresas</strong>
+                que quieren tener presencia online sin complicarse con la parte técnica.
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                El sitio intenta cubrir esos puntos: mostrar los servicios de forma directa,
+                destacar la velocidad y claridad del trabajo, y tener un contacto fácil y funcional.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Contenido y decisiones de diseño</h2>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+                <li>El botón principal <em>“Ver planes”</em> aparece en varios lugares para llevar al visitante directo
+                    a la acción.</li>
+                <li>Secciones simples con buena jerarquía visual para explicar qué hago y cómo trabajo.</li>
+                <li>Modo claro/oscuro para mejorar la experiencia en distintos entornos.</li>
+                <li>La página “Sobre mí” incluye una parte más personal y un artículo sobre el rol del diseñador digital
+                    en la era de la IA.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Herramientas y desarrollo</h2>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                Todo el sitio fue hecho desde cero con <strong>HTML, Tailwind CSS</strong> y un poco de
+                <strong>JavaScript Vanilla</strong>.
+                Usé <strong>Netlify</strong> para publicarlo y <strong>GitHub</strong> para el control de versiones,
+                con dos ramas (<code>main</code> y <code>prod</code>) como pedía la consigna.
+            </p>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+                <li><strong>Tailwind CSS</strong> me permitió mantener el código limpio y ordenado.</li>
+                <li><strong>Formspree</strong> se usa para el formulario de contacto, ya que no tengo backend propio.
+                </li>
+                <li>Los íconos se manejan con un <strong>sprite SVG</strong> para mantener el rendimiento y consistencia
+                    visual.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Aprendizajes y desafíos</h2>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                Lo más desafiante fue lograr que el sitio sea funcional, limpio y escalable, sin depender de frameworks
+                complejos.
+                Aprendí a usar mejor Tailwind, a organizar el proyecto con Git, y a resolver la parte del formulario sin
+                backend.
+                También experimenté con el modo oscuro y con una estructura de código más profesional pensando a futuro.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Conclusión</h2>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                Este proyecto me sirvió para poner en práctica todo lo aprendido y para sentar una base sólida como
+                desarrollador front-end.
+                A futuro me gustaría integrar CMS o bases de datos, pero por ahora el resultado refleja bien mi forma de
+                trabajar:
+                sitios claros, rápidos y pensados para que el cliente no se complique.
+            </p>
+        </section>
+
     </main>
 
     <footer class="bg-bg-dark text-text-dark dark:bg-bg-light dark:text-text-light p-4">
